@@ -6,20 +6,24 @@
   </a>
 </p>
 
-## <img src="https://github.com/7oSkaaa/7oSkaaa/blob/main/Images/about_me.gif?raw=true" width="50px" align="left"> About Me
+## <picture><img src = "https://github.com/7oSkaaa/7oSkaaa/blob/main/Images/about_me.gif?raw=true" width = 50px></picture> About me
 
-<p align="right"> 
-    <img src="https://github.com/7oSkaaa/7oSkaaa/blob/main/Images/Right_Side.gif?raw=true" width="250px"> 
-</p>
+<picture> <img align="right" src="https://github.com/7oSkaaa/7oSkaaa/blob/main/Images/Right_Side.gif?raw=true" width = 250px></picture>
+
+<br><br>
 
 <ul>
-  <li>🎓 <strong>Full Stack Developer</strong> specializing in Web Development at <a href="https://www.codingdojo.com" target="_blank">Coding Dojo</a>.</li>
-  <li>💻 I love creating software solutions to solve real-world problems.</li>
-  <li>🌟 Passionate about competitive programming; active on <code>LeetCode</code> and <code>HackerRank</code>.</li>
-  <li>📘 Currently learning advanced <code>Computer Science</code> concepts, <code>Back-End</code> and <code>Front-End</code> development, and <code>Software Engineering</code>.</li>
-  <li>🤓 Continuously exploring new technologies to expand my skill set.</li>
-  <li>🚀 Open to exciting job opportunities in Back-End, Front-End, or Full-Stack development. Check out my <a href="https://drive.google.com/file/d/1n7DcF8tUM55K01v2l7noOvPywzMbAzFV/view?usp=sharing" target="_blank">Resume</a>.</li>
+  <li>🎓 <strong>I am a <code>Full Stack Developer</code> specializing in Web Development</strong> at <a href="https://www.codingdojo.com" target="_blank">Coding Dojo</a>.</li>
+  <li>💻 <strong>I love creating software solutions</strong> to solve real-world problems.</li>
+  <li>🌟 <strong>I am passionate about competitive programming</strong> and actively engage on platforms like: <code>Leetcode</code>, <code>hackerrank</code>.</li>
+  <li>📘 <strong>Currently learning</strong>: Advanced <code>Computer Science</code> concepts, <code>BackEnd</code>, <code>Front_End</code> and <code>Software Engineering</code>.</li>
+  <li>🤓 Always exploring and <strong>learning new technologies</strong> to expand my skill set.</li>
+  <li>🚀 <strong>Open to exciting job opportunities</strong> in Back-End, Front-End, or Full-Stack development.<br>
+    - Check out <a href="https://drive.google.com/file/d/1n7DcF8tUM55K01v2l7noOvPywzMbAzFV/view?usp=sharing" target="_blank">MY RESUME</a>.
+  </li>
 </ul>
+
+<br>
 
 ---
 
@@ -64,7 +68,7 @@
   <a href="#"><img alt="Git" src="https://img.shields.io/badge/Git%20-%23F05033.svg?style=plastic&logo=git&logoColor=white"></a>
   <a href="#"><img alt="GitHub" src="https://img.shields.io/badge/github-%23181717.svg?style=plastic&logo=github&logoColor=white"></a>
   <a href="#"><img alt="Google Sheets" src="https://img.shields.io/badge/Google%20Sheets%20-%2334A853.svg?style=plastic&logo=google%20sheets&logoColor=white"></a>
-  <a href="#"><img alt="Mark Down" src="https://img.shields.io/badge/Markdown-000000?style=plastic&logo=markdown&logoColor=white"></a>
+  <a href="#"><img alt="Markdown" src="https://img.shields.io/badge/Markdown-000000?style=plastic&logo=markdown&logoColor=white"></a>
   <a href="#"><img alt="Stack Overflow" src="https://img.shields.io/badge/-Stack%20Overflow-FE7A16?style=plastic&logo=stack-overflow&logoColor=white"></a>
   <a href="#"><img alt="Geeks For Geeks" src="https://img.shields.io/badge/geeksforgeeks-%230F9D58.svg?style=plastic&logo=geeksforgeeks&logoColor=white"></a>
   <a href="#"><img alt="JSON" img src="https://img.shields.io/badge/json-%23000000.svg?style=plastic&logo=json&logoColor=white"></a>
