@@ -1,0 +1,42 @@
+:root {
+    --primary-color: #1d3e4c;
+    --secondary-color: #2a5769;
+    --accent-color: #4db5ff;
+    --text-color: #333;
+    --light-text: #fff;
+    --background-color: #f5f5f5;
+    --transition: all 0.3s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.highlight {
+    color: var(--accent-color);
+}
+
+section {
+    padding: 5rem 0;
+}
+
+/* Rest of your existing styles remain the same */

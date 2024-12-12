@@ -1,0 +1,52 @@
+.education-section {
+    background-color: #f9f9f9; /* Light background for contrast */
+    padding: 50px 0; /* Spacing around the section */
+}
+
+.container {
+    max-width: 1200px; /* Limit the width of the container */
+    margin: 0 auto; /* Center the container */
+    padding: 0 20px; /* Padding for smaller screens */
+}
+
+h2 {
+    text-align: center; /* Center the heading */
+    font-size: 2.5em; /* Larger font size for the heading */
+    margin-bottom: 30px; /* Space below the heading */
+    color: #294855; /* Updated color for the heading */
+}
+
+.education-grid {
+    display: grid; /* Use grid layout */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive columns */
+    gap: 20px; /* Space between grid items */
+}
+
+.education-card {
+    background-color: #fff; /* White background for cards */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    padding: 20px; /* Padding inside the card */
+    transition: transform 0.3s; /* Smooth transition for hover effect */
+}
+
+.education-card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.education-icon {
+    font-size: 2em; /* Larger font size for the icon */
+    margin-bottom: 10px; /* Space below the icon */
+    color: #007BFF; /* Blue color for the icon */
+}
+
+.education-card h3 {
+    font-size: 1.5em; /* Font size for the card title */
+    margin-bottom: 10px; /* Space below the title */
+    color: #333; /* Dark color for the title */
+}
+
+.education-card p {
+    font-size: 1em; /* Font size for the description */
+    color: #666; /* Grey color for the description text */
+}

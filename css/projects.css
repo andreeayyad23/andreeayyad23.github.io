@@ -1,0 +1,51 @@
+/* Projects Section Styles */
+.projects-section {
+    padding: 60px 0;
+    background-color: #f9f9f9; /* Light background for contrast */
+}
+
+.projects-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #333; /* Dark text color */
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 20px; /* Space between cards */
+    padding: 0 20px; /* Padding for the grid */
+}
+
+.project-card {
+    background-color: #fff; /* White background for cards */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    overflow: hidden; /* Clip overflow */
+    transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+.project-card img {
+    width: 100%; /* Full width image */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.project-card h3 {
+    font-size: 1.5rem;
+    margin: 15px 0 10px; /* Margin for title */
+    text-align: center; /* Center title */
+    color: #333; /* Dark text color */
+}
+
+.project-card p {
+    padding: 0 15px; /* Padding for description */
+    text-align: center; /* Center description */
+    color: #666; /* Lighter text color */
+}
+
+/* Hover effect for project cards */
+.project-card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
