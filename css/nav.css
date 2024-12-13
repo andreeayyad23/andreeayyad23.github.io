@@ -66,15 +66,25 @@
     cursor: pointer;
 }
 
+.hamburger span {
+    display: block;
+    height: 3px;
+    width: 25px;
+    background: #fff; /* Hamburger icon color */
+    margin: 4px 0;
+    transition: 0.4s;
+}
+
+/* Responsive Styles */
 @media (max-width: 768px) {
     .hamburger {
-        display: block;
+        display: block; /* Show hamburger icon */
     }
     
     .nav-links {
         position: fixed;
-        top: 70px;
-        right: -100%;
+        top: 70px; /* Adjust based on your navbar height */
+        right: -100%; /* Hide off-screen */
         width: 100%;
         height: calc(100vh - 70px);
         background: rgba(29, 62, 76, 0.98);
@@ -85,6 +95,6 @@
     }
     
     .nav-links.active {
-        right: 0;
+        right: 0; /* Show when active */
     }
 }

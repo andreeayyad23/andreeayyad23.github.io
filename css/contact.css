@@ -1,5 +1,5 @@
 .contact-section {
-    background-color: var(--background-color);
+    background-color: #f0f8ff; /* Soft light blue background for the section */
     padding: 4rem 0;
 }
 
@@ -24,7 +24,7 @@
 }
 
 .contact-button:hover {
-    background-color: #162f39; /* Slightly darker shade for hover effect */
+    background-color:white; /* Slightly darker shade for hover effect */
     transform: translateY(-3px);
 }
 

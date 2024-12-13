@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/projects.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="css/education.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 <body>
     <!-- Modern Navigation -->
@@ -22,11 +23,12 @@
             </a>
             <ul class="nav-links">
                 <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
                 <li><a href="#skills" class="nav-link">Skills</a></li>
                 <li><a href="#projects" class="nav-link">Projects</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
-            <div class="hamburger">
+            <div class="hamburger" id="hamburger">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -40,8 +42,7 @@
             <div class="hero-content">
                 <div class="hero-text">
                     <h1>Hi, I'm <span class="highlight">Andree Ayyad</span></h1>
-                    <p>A passionate Full Stack Developer crafting beautiful and functional web experiences.</p>
-                    <div class="cta-buttons">
+                    <p>"Building scalable, efficient, secure, and responsive full-stack applications."<p>                    <div class="cta-buttons">
                         <a href="#projects" class="btn-primary">View My Work</a>
                         <a href="#contact" class="btn-secondary">Get In Touch</a>
                     </div>
@@ -55,24 +56,37 @@
         </div>
     </section>
 
-    <!-- Education Section -->
-    <section id="education" class="education-section">
-        <div class="container">
-            <h2>Education</h2>
-            <div class="education-grid">
-                <div class="education-card">
-                    <i class="fas fa-graduation-cap education-icon"></i>
-                    <h3>Axsos Academy</h3>
-                    <p>Full Stack Web Development & Algorithms and Data Structures</p>
+    
+
+<!-- Education Section -->
+<section id="education" class="education-section py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Education</h2>
+        <div class="row education-grid justify-content-center">
+            <div class="col-md-6 col-lg-4 education-card mb-4">
+                <div class="card shadow-sm hover-card">
+                    <div class="card-body text-center">
+                        <div class="icon-container">
+                            <i class="fa-solid fa-laptop-code" style="font-size: 36px; color: #1d3e4c;"></i>
+                        </div>
+                        <h3 class="card-title">Axsos Academy</h3>
+                        <p class="card-text">Full Stack Web Development & Algorithms and Data Structures</p>
+                    </div>
                 </div>
-                <div class="education-card">
-                    <i class="fas fa-university education-icon"></i>
-                    <h3>Bethlehem University</h3>
-                    <p>Management in Tourism and Business</p>
+            </div>
+            <div class="col-md-6 col-lg-4 education-card mb-4">
+                <div class="card shadow-sm hover-card">
+                    <div class="card-body text-center">
+                        <div class="icon-container">
+                            <i class='fas fa-graduation-cap' style='font-size:36px'></i>
+                            <h3 class="card-title">Bethlehem University</h3>
+                        <p class="card-text">Bachelor of Science in Tourism & Bussiness Management</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- Skills Section -->
     <section id="skills" class="skills-section">
@@ -146,31 +160,32 @@
         </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects-section">
-        <div class="container">
-            <h2>Projects</h2>
-            <div class="projects-grid">
-                <!-- Project Card 1 -->
-                <div class="project-card">
-                    <img src="images/book1.png" alt="Project 1">
-                    <h3>ReadEase</h3>
-                    <p style="color:#1c3c4a;">Build Using Python & Django</p>
-                </div>
-                <!-- Project Card 2 -->
-                <div class="project-card">
-                    <img src="images/Screenshot 2024-12-12 185659.png" alt="Project 2">
-                    <h3>S.O.A.R</h3>
-                    <p>Build Using Java & Spring Boot</p>
-                </div>
-                <!-- Project Card 3 -->
-                <div class="project-card">
-                    <img src="images/screenshot-1724584498676.png" alt="Project 3">
-                    <h3>Athletify</h3>
-                    <p>Build Using MERN "React" & "Node.js"</p>
-                </div>
-            </div>
+<!-- Projects Section -->
+<section id="projects" class="projects-section">
+    <div class="container">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+            <!-- Project Card 1 -->
+            <a href="https://github.com/mustafataha5/New_Book_store" class="project-card">
+                <img src="images/book1.png" alt="Project 1">
+                <h3>ReadEase</h3>
+                <p style="color:#1c3c4a;">Built Using Python & Django</p>
+            </a>
+            <!-- Project Card 2 -->
+            <a href="https://github.com/SaidQT/SOAR" class="project-card">
+                <img src="images/Screenshot 2024-12-12 185659.png" alt="Project 2">
+                <h3>S.O.A.R</h3>
+                <p>Built Using Java & Spring Boot</p>
+            </a>
+            <!-- Project Card 3 -->
+            <a href="https://github.com/ibrahim-ak/Athletify" class="project-card">
+                <img src="images/screenshot-1724584498676.png" alt="Project 3">
+                <h3>Athletify</h3>
+                <p>Built Using MERN (React & Node.js)</p>
+            </a>
         </div>
+    </div>
+</section>
 
     <!-- Contact Section -->
     <section id="contact" class="contact-section">
@@ -198,12 +213,7 @@
             </div>
         </div>
     </section>
-    
-    <footer>
-        <div class="container">
-            <p></p>
-        </div>
-    </footer>
+
     
     <script type="module" src="js/main.js"></script>
 </body>

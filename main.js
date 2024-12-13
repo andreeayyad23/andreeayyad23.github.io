@@ -17,6 +17,20 @@ window.addEventListener('scroll', () => {
     lastScroll = currentScroll;
 });
 
+
+    document.querySelectorAll('a.nav-link').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault(); // Prevent the default anchor click behavior
+            const targetId = this.getAttribute('href'); // Get the target ID
+            document.querySelector(targetId).scrollIntoView({
+                behavior: 'smooth', // Smooth scroll behavior
+                block: 'start' // Align to the start of the section
+            });
+        });
+    });
+
+
+
 // Mobile menu toggle
 const hamburger = document.querySelector('.hamburger');
 const navLinks = document.querySelector('.nav-links');
@@ -24,6 +38,11 @@ const navLinks = document.querySelector('.nav-links');
 hamburger.addEventListener('click', () => {
     navLinks.classList.toggle('active');
     hamburger.classList.toggle('active');
+});
+
+document.getElementById('hamburger').addEventListener('click', function() {
+    const navLinks = document.querySelector('.nav-links');
+    navLinks.classList.toggle('active');
 });
 
 // Smooth scroll for navigation links

@@ -1,7 +1,7 @@
 /* Projects Section Styles */
 .projects-section {
     padding: 60px 0;
-    background-color: #f9f9f9; /* Light background for contrast */
+    background-color: #f0f8ff; /* Soft light blue background for the section */
 }
 
 .projects-section h2 {
@@ -23,29 +23,41 @@
     border-radius: 8px; /* Rounded corners */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
     overflow: hidden; /* Clip overflow */
-    transition: transform 0.3s ease; /* Smooth hover effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+    text-decoration: none; /* Remove underline from anchor */
+    color: inherit; /* Inherit text color from parent */
 }
 
+/* Card Image */
 .project-card img {
-    width: 100%; /* Full width image */
+    width: 100%; /* Full-width image */
     height: auto; /* Maintain aspect ratio */
 }
 
+/* Title style */
 .project-card h3 {
     font-size: 1.5rem;
-    margin: 15px 0 10px; /* Margin for title */
+    margin: 15px 0 5px; /* Margin for title */
     text-align: center; /* Center title */
     color: #333; /* Dark text color */
 }
 
+/* Description style */
 .project-card p {
     padding: 0 15px; /* Padding for description */
     text-align: center; /* Center description */
     color: #666; /* Lighter text color */
+    margin-bottom: 15px; /* Margin for spacing below description */
 }
 
 /* Hover effect for project cards */
 .project-card:hover {
     transform: translateY(-5px); /* Lift effect on hover */
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+/* Optional styles for hover effect */
+.project-card:hover img {
+    transform: scale(1.02); /* Slightly enlarge the image on hover */
+    transition: transform 0.3s ease; /* Smooth transition for image scale */
 }

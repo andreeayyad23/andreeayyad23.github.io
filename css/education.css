@@ -1,52 +1,47 @@
 .education-section {
-    background-color: #f9f9f9; /* Light background for contrast */
-    padding: 50px 0; /* Spacing around the section */
+    background-color: #f0f8ff; /* Soft light blue background for the section */
+    padding: 50px 0; /* Padding for section */
 }
 
-.container {
-    max-width: 1200px; /* Limit the width of the container */
-    margin: 0 auto; /* Center the container */
-    padding: 0 20px; /* Padding for smaller screens */
+.hover-card {
+    transition: transform 0.3s, box-shadow 0.3s; /* Transition for smooth hover effects */
+    border: 1px solid transparent; /* Light border to make it feel defined */
+    border-radius: 10px; /* Rounded corners for cards */
 }
 
-h2 {
-    text-align: center; /* Center the heading */
-    font-size: 2.5em; /* Larger font size for the heading */
-    margin-bottom: 30px; /* Space below the heading */
-    color: #294855; /* Updated color for the heading */
+.hover-card:hover {
+    transform: translateY(-5px); /* Slight lift */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    border-color: #1d3e4c; /* Border color on hover */
 }
 
-.education-grid {
-    display: grid; /* Use grid layout */
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive columns */
-    gap: 20px; /* Space between grid items */
+.icon-container {
+    margin-bottom: 15px; /* Spacing below icon */
 }
 
-.education-card {
-    background-color: #fff; /* White background for cards */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    padding: 20px; /* Padding inside the card */
-    transition: transform 0.3s; /* Smooth transition for hover effect */
+.card-title {
+    color: #1d3e4c; /* Title color */
+    font-weight: bold;
+    font-size: 1.5rem; /* Increased font size for title */
+    margin: 10px 0; /* Margin for spacing */
 }
 
-.education-card:hover {
-    transform: translateY(-5px); /* Lift effect on hover */
+.card-text {
+    color: #555; /* Description color */
+    line-height: 1.6; /* Improved line height for readability */
 }
 
-.education-icon {
-    font-size: 2em; /* Larger font size for the icon */
-    margin-bottom: 10px; /* Space below the icon */
-    color: #007BFF; /* Blue color for the icon */
+/* Card styling */
+.card {
+    background-color: #ffffff; /* Card color */
+    padding: 30px; /* Padding for the card */
+    border-radius: 10px; /* Rounded corners */
+    text-align: center; /* Center-align text */
+    position: relative; /* Position for hover effects */
+    overflow: hidden; /* Hide overflow */
 }
 
-.education-card h3 {
-    font-size: 1.5em; /* Font size for the card title */
-    margin-bottom: 10px; /* Space below the title */
-    color: #333; /* Dark color for the title */
-}
-
-.education-card p {
-    font-size: 1em; /* Font size for the description */
-    color: #666; /* Grey color for the description text */
+/* Add hover effect on the card body */
+.hover-card:hover .card-body {
+    background-color: #e6f0ff; /* Light blue background on hover */
 }
