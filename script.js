@@ -63,3 +63,40 @@ filterButtons.forEach((button) => {
     });
   });
 });
+
+// Magnetic buttons
+document.querySelectorAll('.magnetic').forEach(btn => {
+    btn.addEventListener('mousemove', (e) => {
+      const rect = btn.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+      
+      const centerX = rect.width / 2;
+      const centerY = rect.height / 2;
+      
+      const angleX = (x - centerX) / 10;
+      const angleY = (y - centerY) / 10;
+      
+      btn.style.setProperty('--tx', `${angleX}px`);
+      btn.style.setProperty('--ty', `${angleY}px`);
+    });
+    
+    btn.addEventListener('mouseleave', () => {
+      btn.style.setProperty('--tx', '0');
+      btn.style.setProperty('--ty', '0');
+    });
+  });
+  
+  // Text reveal observer
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('animate');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1 });
+  
+  document.querySelectorAll('.text-reveal').forEach(el => {
+    observer.observe(el);
+  });
