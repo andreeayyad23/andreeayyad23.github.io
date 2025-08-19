@@ -488,13 +488,14 @@
     </div>
     <!-- Mobile menu -->
     <div id="mobile-menu" class="hidden md:hidden glass mt-4 pb-4 px-4">
+      <a href="#" class="block py-2 text-gray-300 hover:text-white transition">Home</a>
       <a href="#about" class="block py-2 text-gray-300 hover:text-white transition">About</a>
       <a href="#skills" class="block py-2 text-gray-300 hover:text-white transition">Skills</a>
       <a href="#projects" class="block py-2 text-gray-300 hover:text-white transition">Projects</a>
       <a href="#contact" class="block py-2 text-gray-300 hover:text-white transition">Contact</a>
-      <button id="mobile-theme-toggle" class="w-full text-left py-2 text-gray-300 hover:text-white transition">
+      <!-- <button id="mobile-theme-toggle" class="w-full text-left py-2 text-gray-300 hover:text-white transition">
         <i class="fas fa-moon mr-2"></i> Toggle Theme
-      </button>
+      </button> -->
     </div>
   </nav>
 
@@ -928,42 +929,42 @@
 
   <script>
     // Custom cursor
-    const cursorDot = document.querySelector('.cursor-dot');
-    const cursorOutline = document.querySelector('.cursor-outline');
+    // const cursorDot = document.querySelector('.cursor-dot');
+    // const cursorOutline = document.querySelector('.cursor-outline');
 
-    document.addEventListener('mousemove', (e) => {
-      const posX = e.clientX;
-      const posY = e.clientY;
+    // document.addEventListener('mousemove', (e) => {
+    //   const posX = e.clientX;
+    //   const posY = e.clientY;
 
-      cursorDot.style.left = `${posX}px`;
-      cursorDot.style.top = `${posY}px`;
+    //   cursorDot.style.left = `${posX}px`;
+    //   cursorDot.style.top = `${posY}px`;
 
-      cursorOutline.style.left = `${posX}px`;
-      cursorOutline.style.top = `${posY}px`;
+    //   cursorOutline.style.left = `${posX}px`;
+    //   cursorOutline.style.top = `${posY}px`;
 
-      cursorDot.style.opacity = 1;
-      cursorOutline.style.opacity = 1;
-    });
+    //   cursorDot.style.opacity = 1;
+    //   cursorOutline.style.opacity = 1;
+    // });
 
-    document.addEventListener('mouseleave', () => {
-      cursorDot.style.opacity = 0;
-      cursorOutline.style.opacity = 0;
-    });
+    // document.addEventListener('mouseleave', () => {
+    //   cursorDot.style.opacity = 0;
+    //   cursorOutline.style.opacity = 0;
+    // });
 
-    // Interactive cursor effects
-    const links = document.querySelectorAll('a, button, .card-3d');
+    // // Interactive cursor effects
+    // const links = document.querySelectorAll('a, button, .card-3d');
 
-    links.forEach(link => {
-      link.addEventListener('mouseenter', () => {
-        cursorDot.style.transform = 'translate(-50%, -50%) scale(1.5)';
-        cursorOutline.style.transform = 'translate(-50%, -50%) scale(1.5)';
-      });
+    // links.forEach(link => {
+    //   link.addEventListener('mouseenter', () => {
+    //     cursorDot.style.transform = 'translate(-50%, -50%) scale(1.5)';
+    //     cursorOutline.style.transform = 'translate(-50%, -50%) scale(1.5)';
+    //   });
 
-      link.addEventListener('mouseleave', () => {
-        cursorDot.style.transform = 'translate(-50%, -50%) scale(1)';
-        cursorOutline.style.transform = 'translate(-50%, -50%) scale(1)';
-      });
-    });
+    //   link.addEventListener('mouseleave', () => {
+    //     cursorDot.style.transform = 'translate(-50%, -50%) scale(1)';
+    //     cursorOutline.style.transform = 'translate(-50%, -50%) scale(1)';
+    //   });
+    // });
 
     // Particle canvas
     const canvas = document.getElementById('particle-canvas');
